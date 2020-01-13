@@ -35,7 +35,18 @@
 		FB9B6F0723C54A2B00A46E0F /* EarthPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B6F0623C54A2B00A46E0F /* EarthPhotoViewController.swift */; };
 		FB9B6F0923C54A5400A46E0F /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B6F0823C54A5400A46E0F /* ImageSearchViewController.swift */; };
 		FB9B6F0B23C54AC200A46E0F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B6F0A23C54AC200A46E0F /* Extensions.swift */; };
+		FB9B6F2023CD16B700A46E0F /* NASA_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9B6F1F23CD16B700A46E0F /* NASA_AppTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB9B6F2223CD16B700A46E0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB9B6EB823C5461A00A46E0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB9B6EBF23C5461A00A46E0F;
+			remoteInfo = "NASA-App";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FB9B6EC023C5461A00A46E0F /* NASA-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,10 +79,20 @@
 		FB9B6F0623C54A2B00A46E0F /* EarthPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthPhotoViewController.swift; sourceTree = "<group>"; };
 		FB9B6F0823C54A5400A46E0F /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
 		FB9B6F0A23C54AC200A46E0F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FB9B6F1D23CD16B700A46E0F /* NASA-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NASA-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9B6F1F23CD16B700A46E0F /* NASA_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_AppTests.swift; sourceTree = "<group>"; };
+		FB9B6F2123CD16B700A46E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FB9B6EBD23C5461A00A46E0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB9B6F1A23CD16B700A46E0F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				FB9B6EC223C5461A00A46E0F /* NASA-App */,
+				FB9B6F1E23CD16B700A46E0F /* NASA-AppTests */,
 				FB9B6EC123C5461A00A46E0F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				FB9B6EC023C5461A00A46E0F /* NASA-App.app */,
+				FB9B6F1D23CD16B700A46E0F /* NASA-AppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,6 +188,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		FB9B6F1E23CD16B700A46E0F /* NASA-AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB9B6F1F23CD16B700A46E0F /* NASA_AppTests.swift */,
+				FB9B6F2123CD16B700A46E0F /* Info.plist */,
+			);
+			path = "NASA-AppTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,6 +217,24 @@
 			productReference = FB9B6EC023C5461A00A46E0F /* NASA-App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FB9B6F1C23CD16B700A46E0F /* NASA-AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB9B6F2623CD16B700A46E0F /* Build configuration list for PBXNativeTarget "NASA-AppTests" */;
+			buildPhases = (
+				FB9B6F1923CD16B700A46E0F /* Sources */,
+				FB9B6F1A23CD16B700A46E0F /* Frameworks */,
+				FB9B6F1B23CD16B700A46E0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB9B6F2323CD16B700A46E0F /* PBXTargetDependency */,
+			);
+			name = "NASA-AppTests";
+			productName = "NASA-AppTests";
+			productReference = FB9B6F1D23CD16B700A46E0F /* NASA-AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,6 +247,10 @@
 				TargetAttributes = {
 					FB9B6EBF23C5461A00A46E0F = {
 						CreatedOnToolsVersion = 11.3;
+					};
+					FB9B6F1C23CD16B700A46E0F = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = FB9B6EBF23C5461A00A46E0F;
 					};
 				};
 			};
@@ -214,6 +268,7 @@
 			projectRoot = "";
 			targets = (
 				FB9B6EBF23C5461A00A46E0F /* NASA-App */,
+				FB9B6F1C23CD16B700A46E0F /* NASA-AppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -226,6 +281,13 @@
 				FB9B6ED023C5461C00A46E0F /* LaunchScreen.storyboard in Resources */,
 				FB9B6ECD23C5461C00A46E0F /* Assets.xcassets in Resources */,
 				FB9B6ECB23C5461A00A46E0F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB9B6F1B23CD16B700A46E0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +326,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB9B6F1923CD16B700A46E0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB9B6F2023CD16B700A46E0F /* NASA_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB9B6F2323CD16B700A46E0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB9B6EBF23C5461A00A46E0F /* NASA-App */;
+			targetProxy = FB9B6F2223CD16B700A46E0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FB9B6EC923C5461A00A46E0F /* Main.storyboard */ = {
@@ -436,6 +514,46 @@
 			};
 			name = Release;
 		};
+		FB9B6F2423CD16B700A46E0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6W28U4TCR;
+				INFOPLIST_FILE = "NASA-AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thechoygroup.NASA-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NASA-App.app/NASA-App";
+			};
+			name = Debug;
+		};
+		FB9B6F2523CD16B700A46E0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6W28U4TCR;
+				INFOPLIST_FILE = "NASA-AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thechoygroup.NASA-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NASA-App.app/NASA-App";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -453,6 +571,15 @@
 			buildConfigurations = (
 				FB9B6ED523C5461C00A46E0F /* Debug */,
 				FB9B6ED623C5461C00A46E0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB9B6F2623CD16B700A46E0F /* Build configuration list for PBXNativeTarget "NASA-AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB9B6F2423CD16B700A46E0F /* Debug */,
+				FB9B6F2523CD16B700A46E0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
